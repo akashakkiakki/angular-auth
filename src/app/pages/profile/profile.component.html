@@ -1,0 +1,10 @@
+<div class="profile-card">
+  <div class="profile-image">
+    <img [src]="profile.image" alt="Profile Avatar" />
+  </div>
+
+  <h2>Hello, {{ profile?.firstName }}</h2>
+  <p><strong>Email:</strong> {{ profile?.email }}</p>
+  <p><strong>Username:</strong> {{ profile?.username }}</p>
+  <button (click)="logout()">Logout</button>
+</div>
